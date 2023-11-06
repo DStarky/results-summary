@@ -1,0 +1,46 @@
+.root {
+
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.category {
+  flex-grow: 1;
+
+  font-weight: var(--semibold);
+}
+
+.score {
+  color: var(--score-color);
+  font-weight: var(--semibold);
+
+  span {
+    color: var(--neutral-gray-blue);
+    font-weight: var(--bold);
+  }
+}
+
+[data-color="red"] {
+  color: var(--red);
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+[data-color="orange"] {
+  color: var(--orange);
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+[data-color="green"] {
+  color: var(--green);
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+[data-color="blue"] {
+  color: var(--blue);
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}

@@ -4,13 +4,13 @@ import SingleScore from '../SingleScore/SingleScore';
 
 const Summary = () => {
 	return (
-		<div>
+		<div className={styles.root}>
 			<h3>Summary</h3>
 			<ul>
-				{data.map(result => {
+				{data.map((result, index) => {
 					return (
-						<li>
-							<SingleScore />
+						<li key={index}>
+							<SingleScore {...result} />
 						</li>
 					);
 				})}
