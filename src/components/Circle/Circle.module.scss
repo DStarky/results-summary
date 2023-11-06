@@ -1,0 +1,21 @@
+.root {
+  background: linear-gradient(var(--circle-light), var(--circle-dark));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.score {
+  color: var(--neutral-white);
+  font-size: 48px;
+  font-weight: var(--bold);
+}
+
+.text{
+  font-size: 12px;
+}

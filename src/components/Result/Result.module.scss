@@ -1,0 +1,24 @@
+.root {
+  background: linear-gradient(var(--bg-violet), var(--bg-blue));
+  padding: 20px 40px 40px;
+  border-radius: 0 0 40px 40px;
+  color: var(--neutral-lavender);
+  text-align: center;
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: var(--neutral-white);
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+}
+
+.text{
+  font-size: 14px;
+}
