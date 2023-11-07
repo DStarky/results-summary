@@ -33,6 +33,8 @@
 .score {
   color: var(--score-color);
   font-weight: var(--semibold);
+  display: flex;
+  gap: 10px;
 
   span {
     color: var(--neutral-gray-blue);
