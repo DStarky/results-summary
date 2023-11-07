@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import styles from './SingleScore.module.scss';
 
 interface SingleScoreProps {
@@ -8,6 +9,14 @@ interface SingleScoreProps {
 }
 
 const SingleScore = ({ category, score, icon, color }: SingleScoreProps) => {
+	const [scoreWidth, setScoreWidth] = useState<number>(0);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setScoreWidth(score);
+		}, 100);
+	}, []);
+
 	return (
 		<div
 			className={styles.root}
@@ -15,7 +24,7 @@ const SingleScore = ({ category, score, icon, color }: SingleScoreProps) => {
 			data-width={`${score}px`}>
 			<div
 				className={styles.progress}
-				style={{ width: `${score}%` }}
+				style={{ width: `${scoreWidth}%` }}
 				data-color={color}></div>
 			<img
 				src={icon}
