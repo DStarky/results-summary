@@ -7,11 +7,22 @@
   align-items: center;
   gap: 10px;
   font-size: 16px;
+  position: relative;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
       margin-bottom: 10px;
       padding: 15px;
   }
+}
+
+.progress{
+  position: absolute;
+
+  height: 100%;
+  background: red;
+  left: 0;
+  top: 0;
 }
 
 .category {
