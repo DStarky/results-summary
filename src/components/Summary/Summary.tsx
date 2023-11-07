@@ -15,6 +15,7 @@ const Summary = () => {
 					);
 				})}
 			</ul>
+			<button className={styles.button}>Continue</button>
 		</div>
 	);
 };
